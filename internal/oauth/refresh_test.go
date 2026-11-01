@@ -11,7 +11,7 @@ import (
 
 	"github.com/zalando/go-keyring"
 
-	"github.com/clawopshq/cli/internal/config"
+	"github.com/koreaaitel/cli/internal/config"
 )
 
 // isolate 는 설정·키체인을 테스트 안에 가둔다.

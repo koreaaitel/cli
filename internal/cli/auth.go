@@ -11,9 +11,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/clawopshq/cli/internal/config"
-	"github.com/clawopshq/cli/internal/oauth"
-	"github.com/clawopshq/cli/internal/output"
+	"github.com/koreaaitel/cli/internal/config"
+	"github.com/koreaaitel/cli/internal/oauth"
+	"github.com/koreaaitel/cli/internal/output"
 )
 
 func newAuthCmd() *cobra.Command {

@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/clawopshq/cli/internal/api"
-	"github.com/clawopshq/cli/internal/config"
-	"github.com/clawopshq/cli/internal/output"
+	"github.com/koreaaitel/cli/internal/api"
+	"github.com/koreaaitel/cli/internal/config"
+	"github.com/koreaaitel/cli/internal/output"
 )
 
 // --to 는 필수다. 없이 보내면 서버가 400 을 주기 전에 여기서 멈춰야 한다.
