@@ -36,7 +36,7 @@ clawops messages send --help
 ## 설치
 
 ```bash
-brew install clawopshq/tap/clawops
+brew install koreaaitel/tap/clawops
 # 또는
 curl -fsSL https://cli.claw-ops.com/install | sh
 ```

@@ -13,10 +13,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/clawopshq/cli/internal/api"
-	"github.com/clawopshq/cli/internal/config"
-	"github.com/clawopshq/cli/internal/oauth"
-	"github.com/clawopshq/cli/internal/output"
+	"github.com/koreaaitel/cli/internal/api"
+	"github.com/koreaaitel/cli/internal/config"
+	"github.com/koreaaitel/cli/internal/oauth"
+	"github.com/koreaaitel/cli/internal/output"
 )
 
 // BuildInfo 는 main 이 ldflags 로 받은 빌드 메타데이터.

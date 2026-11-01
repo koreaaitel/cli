@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/clawopshq/cli/internal/cli"
+	"github.com/koreaaitel/cli/internal/cli"
 )
 
 // version 은 goreleaser 가 -ldflags 로 주입한다.

@@ -16,7 +16,7 @@ import (
 
 	"golang.org/x/oauth2"
 
-	"github.com/clawopshq/cli/internal/config"
+	"github.com/koreaaitel/cli/internal/config"
 )
 
 // loginTimeout 은 브라우저 승인을 기다리는 최대 시간이다.

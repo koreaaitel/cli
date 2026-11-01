@@ -11,9 +11,9 @@ import (
 	"github.com/mattn/go-runewidth"
 	"github.com/spf13/cobra"
 
-	"github.com/clawopshq/cli/internal/api"
-	"github.com/clawopshq/cli/internal/config"
-	"github.com/clawopshq/cli/internal/output"
+	"github.com/koreaaitel/cli/internal/api"
+	"github.com/koreaaitel/cli/internal/config"
+	"github.com/koreaaitel/cli/internal/output"
 )
 
 func newMessagesCmd() *cobra.Command {

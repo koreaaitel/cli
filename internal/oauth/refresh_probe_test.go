@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/clawopshq/cli/internal/config"
+	"github.com/koreaaitel/cli/internal/config"
 )
 
 func kind(tok string) string {

@@ -1,4 +1,4 @@
-module github.com/clawopshq/cli
+module github.com/koreaaitel/cli
 
 go 1.26.5
 
