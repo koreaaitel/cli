@@ -39,3 +39,22 @@ func TestCustomIssuerSurvivesLoad(t *testing.T) {
 		t.Errorf("커스텀 issuer 가 덮어써졌다: %q", p.Issuer)
 	}
 }
+
+// auth.claw-ops.com 은 운영 중인 발급자다. 거기서 로그인한 프로필을 새 기본값으로 옮기면
+// 저장된 토큰과 인증 서버가 어긋난다.
+func TestPreviousDefaultIssuerSurvivesLoad(t *testing.T) {
+	isolate(t)
+
+	const previous = "https://auth.claw-ops.com"
+	if err := SaveProfile(&Profile{Name: "prod", Issuer: previous}); err != nil {
+		t.Fatal(err)
+	}
+
+	p, err := Load("prod")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if p.Issuer != previous {
+		t.Errorf("저장된 issuer 가 바뀌었다: %q (want %q)", p.Issuer, previous)
+	}
+}
