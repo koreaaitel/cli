@@ -29,9 +29,12 @@ const (
 	DefaultProfile = "default"
 
 	// OIDC Discovery §4.3 은 문서의 issuer 가 조회에 쓴 URL 과 같기를 요구한다.
-	// api.claw-ops.com 에도 discovery alias 가 있지만 그쪽은 issuer 로
-	// auth.claw-ops.com 을 돌려주므로 §4.3 을 어긴다 — 정본 호스트를 쓴다.
-	DefaultIssuer = "https://auth.claw-ops.com"
+	// api.* 호스트에도 discovery alias 가 있지만 그쪽은 issuer 로 auth.* 를
+	// 돌려주므로 §4.3 을 어긴다 — 정본 호스트를 쓴다.
+	//
+	// auth.claw-ops.com 도 발급자로 계속 운영된다. 프로필에 그 값을 적어 둔
+	// 사용자는 그대로 두므로 legacyIssuers 에 넣지 않는다.
+	DefaultIssuer = "https://auth.koreaaitel.com"
 
 	// DefaultAPIBase 는 REST API 의 호스트다. issuer 와 다른 호스트이고 discovery
 	// 문서에도 실리지 않으므로(거기 있는 것은 인가 서버의 엔드포인트들이다) 별도로 둔다.
